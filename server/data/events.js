@@ -48,6 +48,27 @@ const eventsData = [
         image:"https://cfmatl.org/wp-content/uploads/2021/04/Grant-Park-FM-Logo-Web-High-640x558.png",
         time:"9am to 1pm",
         location_id: 2
-    }
+    },
+    {
+        name: "Norcross Art Splash Festival",
+        location: "Norcross",
+        date:"October 11, 2025",
+        type: "Festival",
+        website:"https://www.norcrossga.net/Calendar.aspx?EID=3392&month=10&year=2025&day=11&calType=0",
+        image:"https://www.norcrossga.net/ImageRepository/Document?documentID=4575",
+        time:"10:00 am - 6:00 pm",
+        location_id: 4
+    },
+    {
+        name: "Haunted Tours",
+        location: "Duluth",
+        date: "October 11, 2025",
+        type: "Event",
+        website: "https://duluthga.net/business_detail_T5_R711.php",
+        image: "https://duluthga.net/Duluth_HauntedTours2025_Social%20-%20Copy%20(2).jpg?t=202509120833190",
+        time: "3:00 pm - 10:00 pm",
+        location_id: 3
+    },
+
 ]
 export default eventsData;

@@ -1,4 +1,4 @@
-import { pool } from "../config/database";
+import { pool } from "../config/database.js";
 
 const getLocations = async (req, res) => {
     try {
@@ -14,12 +14,11 @@ const getLocations = async (req, res) => {
 
 const getEventsByLocation = async (req, res) => {
     try {
-        const { location_id } = req.params;
+        const { location } = req.params;
         const result = await pool.query(
-            `SELECT * FROM events WHERE location_id = $1`,
-            [location_id]
+            `SELECT * FROM events WHERE location = '${location}'`
         );
-        res.json(result.rows[0]);
+        res.json(result.rows);
     } catch (err) {
         console.error('Error fetching events by location:', err);
         res.status(500).json({ error: 'Internal server error' });
@@ -27,4 +26,4 @@ const getEventsByLocation = async (req, res) => {
     }
 };
 
-export { getLocations, getEventsByLocation };
+export default { getLocations, getEventsByLocation };

@@ -1,9 +1,9 @@
 import express from 'express';
 import locationsController from '../controllers/locations.js';
 
-const router = express.Router();
+const locationsRouter = express.Router();
 
-router.get('/', locationsController.getLocations); 
-router.get('/:location_id/events', locationsController.getEventsByLocation);
+locationsRouter.get('/', locationsController.getLocations); 
+locationsRouter.get('/:location/events', locationsController.getEventsByLocation);
 
-export default router;
+export default locationsRouter;

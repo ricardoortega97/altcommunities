@@ -8,5 +8,8 @@ const locationsData = [
     {
         location: "Duluth",
     },
+    {
+        location: "Norcross",
+    }
     ]
 export default locationsData;

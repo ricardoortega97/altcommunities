@@ -13,4 +13,4 @@ const getEvents = async (req, res) => {
 };
 
 
-export { getEvents };
+export default { getEvents };
