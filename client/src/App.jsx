@@ -2,7 +2,7 @@ import React from 'react'
 import { useRoutes, Link } from 'react-router-dom'
 import Locations from './pages/Locations'
 import LocationEvents from './pages/LocationEvents'
-import Events from './pages/Events'
+// import Events from './pages/Events'
 import './App.css'
 
 const App = () => {
