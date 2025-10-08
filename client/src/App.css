@@ -1,5 +1,5 @@
 .app {
-    background: url('./assets/unitygrid.jpg');
+    background: url('./assets/atl.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -7,14 +7,14 @@
 }
 
 header {
-    padding: 50px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .main-header {
-    height: 30vh;
+    height: 20vh;
     width: 85vw;
     align-items: flex-end;
     position: relative;
@@ -22,7 +22,7 @@ header {
 }
 
 .header-buttons {
-    width: 30%;
+    width: 35%;
     display: flex;
     justify-content: space-around;
 }
